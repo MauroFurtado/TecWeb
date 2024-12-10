@@ -1,0 +1,131 @@
+/* Estilo do body */
+body {
+  /* Define a fonte padrão, cor de fundo e cor do texto da página */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Cabeçalho */
+.cabeçalho {
+  /* Estiliza o cabeçalho com cor de fundo azul, texto branco e posição fixa no topo */
+  background-color: #0746ca;
+  color: white;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.cabeçalho h1 {
+  font-size: 24px;
+}
+
+.botão { 
+  /* Estiliza o botão de ação com posição fixa, cor branca e arredondamento */
+  position: fixed;
+  top: 25px;
+  right: 1px;
+  background-color: white;
+  color: #4caf50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.botão:hover {
+  /* Adiciona efeito ao botão quando o cursor está sobre ele */
+  background-color: #45a049;
+  color: white;
+}
+
+/* Corpo principal */
+.corpo {
+  /* Adiciona margem superior para evitar sobreposição com o cabeçalho fixo */
+  margin-top: 70px;
+}
+
+/* Barra lateral */
+.categorias {
+  /* Define o estilo da barra lateral com cor de fundo escura e largura fixa */
+  background-color: #152247;
+  color: white;
+  width: 250px;
+  height: calc(100vh - 70px);
+  padding: 20px;
+  position: fixed;
+  top: 70px;
+  margin-top: 20px;
+}
+
+.categorias ul {
+  /* Adiciona espaçamento acima da lista de categorias */
+  margin-top: 20px;
+}
+
+.categorias li {
+  /* Espaçamento entre os itens da lista */
+  margin-bottom: 15px;
+}
+
+.categorias a {
+  /* Estiliza os links da barra lateral com cor branca e fonte legível */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.categorias a:hover {
+  /* Adiciona sublinhado ao passar o cursor nos links */
+  text-decoration: underline;
+}
+
+/* Área principal */
+.listaTarefas h2 {
+  /* Ajusta o título da lista de tarefas com margem superior */
+  margin-top: 100px;
+}
+
+.tarefas {
+  /* Define a área principal com margens e largura responsiva */
+  margin-left: 20px;
+  padding: 20px;
+  width: calc(100% - 270px);
+}
+
+.tarefas h2 {
+  /* Estiliza o título da área de tarefas */
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+}
+
+.task, .listaTarefas h2 {
+  /* Define o layout das tarefas e do título com margens, bordas arredondadas e sombras */
+  text-align: left;
+  margin-left: 300px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Prioridades */
+.prioridade-Alta {
+  /* Define a cor de fundo vermelho para tarefas de alta prioridade */
+  background-color: #ff5252;
+  color: white;
+}
+
+.prioridade-Media {
+  /* Define a cor de fundo amarela para tarefas de prioridade média */
+  background-color: #ffca28;
+}
+
+.prioridade-Baixa {
+  /* Define a cor de fundo verde para tarefas de baixa prioridade */
+  background-color: #81c784;
+  color: white;
+}
